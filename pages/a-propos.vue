@@ -1,3 +1,3 @@
 <template>
-  <h1>À Propos</h1>
+  <AboutComp />
 </template>
