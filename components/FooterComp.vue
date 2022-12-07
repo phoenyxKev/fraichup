@@ -1,5 +1,6 @@
 <template>
-	<footer>
+	<footer action="https://formspree.io/f/mqkjrlqj" method="POST">
+		<!-- action="https://formspree.io/f/mdobddan" method="POST" -->
 		<div class="img-container">
 			<img src="~/assets/img/Fraichup.svg" alt="Fraichup" />	
 		</div>		
@@ -7,13 +8,13 @@
 			<div class="links">
 				<h3>Liens</h3>
 				<nuxt-link to="/">Accueil</nuxt-link>
-				<nuxt-link to="/">Contact</nuxt-link>
-				<nuxt-link to="/">À Propos</nuxt-link>
+				<nuxt-link to="/contact">Contact</nuxt-link>
+				<nuxt-link to="/a-propos">À Propos</nuxt-link>
 			</div>
 			<div class="links">
 				<h3>Mentions Légales</h3>
-				<nuxt-link to="/">Conditions générales d'utilisation</nuxt-link>
-				<nuxt-link to="/">Politique de protection des données</nuxt-link>
+				<nuxt-link to="/info">Conditions générales d'utilisation</nuxt-link>
+				<nuxt-link to="/info">Politique de protection des données</nuxt-link>
 			</div>	
 		</div>
 		

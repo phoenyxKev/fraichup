@@ -5,31 +5,25 @@
       <section class="hero">
         <h1>Livraison de frites fraîches<br>& légumes prédécoupés</h1>
         <p class="description">Basé à Biot, nous livrons à nos clients des frites et fruits frais mis sous vide.</p>
-        <button class="sample">Obtenez un échantillon gratuit
+        <button @click="$router.push('/contact')" class="sample">Obtenez un échantillon gratuit
           <Icon name="material-symbols:chevron-right-rounded" />
         </button>
       </section>
-      <section class="banner">
-        <ul>
-          <li>#Qualité</li>
-          <li>#Réactif</li>
-          <li>#Local</li>
-        </ul>
-      </section>
+      <div class="background-img"></div>
     </div>
 
     <section id="process">
       <h2>SERVICE FRAICHUP</h2>
       <ul>
-        <li class="on-sight" style="opacity: 0.4;">
+        <li class="on-sight" style="opacity: 0.1;">
           <h3>Qualité<Icon name="mingcute:certificate-fill" /></h3>
           <p>Nous garantissons un produit de qualité, grâce à l'application de notre charte d'engagements.</p>
         </li>
-        <li class="on-sight" style="opacity: 0.4;">
+        <li class="on-sight" style="opacity: 0.1;">
           <h3>Fraîcheur garantie <Icon name="noto:kiwi-fruit" /></h3>  
           <p>Nos camions réfrigérés nous permettent de livrer nos produits rapidement en conservant la fraîcheur.</p>
         </li>
-        <li class="on-sight" style="opacity: 0.4;">
+        <li class="on-sight" style="opacity: 0.1;">
           <h3>Suivi des commandes <Icon name="fluent-mdl2:issue-tracking" /></h3>
           <p>Afin de cultiver cultiver avec nos partenaires une relation basée sur la confiance nous établissons un suivi sur chaque commande.</p>
         </li>
@@ -63,7 +57,7 @@ export default {
       let options = {
         root: null,
         rootMargin: '0px',
-        threshold: 0.9 // <- on 100% pixels screen visibility
+        threshold: 0.2 // <- on 100% pixels screen visibility
       }
       const handleIntersect =  (entries, observer) => {
         entries.forEach(entry => {
@@ -93,15 +87,11 @@ export default {
 <style scoped>
 /* HERO */
 #hero-container {
-  min-height: calc(100vh - 64px);
-  max-height: calc(100vh - 64px);
+  min-height: calc(100vh - 64px - 1rem);
+  max-height: calc(100vh - 64px - 1rem);
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: 1fr 1fr;
-}
-
-.hero {
-  padding: 1rem;
 }
 
 h1 {
@@ -129,7 +119,7 @@ h1 {
 }
 
 .sample:hover {
-  color: white;
+  background-color: #2a7fff1a;
 }
 
 .sample svg {
@@ -148,7 +138,7 @@ h1 {
   }
 }
 
-.banner {
+.background-img {
   background-image: url("~/assets/img/fruits.png");
   background-size: contain;
   background-position: center;
@@ -162,17 +152,12 @@ h1 {
   font-weight: 600;
 }
 
-.banner ul {
-  padding: 1rem;
-  border-radius: 4px;
-  box-shadow: -4px 4px 14px 0px rgba(0, 85, 212, 0.5);
-  border: 1px solid rgba(0, 85, 212, 0.2);
-  background-color: rgba(255, 255, 255, 0.6);
-}
-
 /* PROCESS */
 #process {
-  padding: 4rem 1rem 1rem 1rem;
+  padding-top: 4rem;
+}
+h2 {
+  margin-top: 2rem;
 }
 #process h2, h3 {
   text-align: center;
@@ -198,11 +183,12 @@ h1 {
 
 /* MAP */
 #map {
-  padding: 1rem;
+  margin: 4rem 0 2rem 0;
 }
-
 .map-container {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .map-container a {

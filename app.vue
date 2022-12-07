@@ -1,9 +1,11 @@
 <template>
   <NuxtLayout>
-    <LoadingComp v-if="!visited" />
-    <NavComp />
-    <NuxtPage />
-    <FooterComp />
+    <client-only>
+      <LoadingComp v-if="!visited" />
+      <NavComp v-else />
+      <NuxtPage />
+      <FooterComp />
+    </client-only>
   </NuxtLayout>  
 </template>
 
@@ -71,6 +73,10 @@ export default {
   margin: 0;
   padding: 0;
 }
+main {
+  padding: 1rem;
+  min-height: 100vh;
+}
 ul {
   list-style: none;
 }
@@ -84,6 +90,10 @@ button {
   outline: 0;
   color: inherit;
   cursor: pointer;
+}
+button:active {
+  transition: transform 250ms;
+  transform: scale(0.98);
 }
 
 /* ON SIGHT ANIMATION */
