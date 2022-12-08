@@ -42,7 +42,7 @@
       </div>
       <ul>
         <li>471 Chem. des Prés, 06410 Biot</li>
-        <li><a href="mailto:contactfraichup@gmail.com">contactfraichup@gmail.com</a></li>
+        <li><a href="mailto:contact@fraichup06.fr">contact@fraichup06.fr</a></li>
         <li><a href="tel:+33658228321">06 58 22 83 21</a></li>
       </ul>
     </section>

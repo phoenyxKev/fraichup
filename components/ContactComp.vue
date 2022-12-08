@@ -40,7 +40,7 @@
     </form>
     <div class="links">
       <ul>
-        <li><a href="mailto:contactfraichup@gmail.com"><Icon name="ic:baseline-email" /> contactfraichup@gmail.com</a></li>
+        <li><a href="mailto:contact@fraichup06.fr"><Icon name="ic:baseline-email" /> contact@fraichup06.fr</a></li>
         <li><nuxt-link to="/"><Icon name="mdi:web" /> www.fraichup06.fr</nuxt-link></li>
         <li><a href="/"><Icon name="ic:round-facebook" /> Facebook</a></li>
         <li><a href="/"><Icon name="uil:linkedin" /> Linkedin</a></li>
