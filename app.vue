@@ -98,7 +98,7 @@ button:active {
 /* +> 600px screens */
 @media screen and (min-width: 600px) {
   #__nuxt {
-    max-width: 1920px;
+    max-width: 1200px;
   }
   main {
     padding: 3rem;
