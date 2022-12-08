@@ -35,19 +35,6 @@ export default {
   --altTextColor: rgb(236, 236, 236);
   --footerColor: rgba(63, 63, 70, 0.2);
 }
-/*::-webkit-scrollbar {
-  width: 0.5rem;
-}
-::-webkit-scrollbar-track {
-  background: var(--altBackgroundColor);
-}
-::-webkit-scrollbar-thumb {
-  background: var(--defaultTextColor);
-  border-radius: 1rem;
-}
-::-webkit-scrollbar-thumb:hover {
-  background-color: var(--green);
-}*/
 #__nuxt {
   position: relative;
   min-height: 100vh;
@@ -108,7 +95,13 @@ button:active {
   }
 }
 
-/* +> 900px screens 
-@media screen and (min-width: 900px) {
-}*/
+/* +> 600px screens */
+@media screen and (min-width: 600px) {
+  #__nuxt {
+    max-width: 1920px;
+  }
+  main {
+    padding: 3rem;
+  }
+}
 </style>

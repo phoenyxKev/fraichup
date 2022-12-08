@@ -123,4 +123,12 @@ li {
 li:hover {
   text-decoration: underline;
 }
+
+/* +> 600px screens */
+@media screen and (min-width: 600px) {
+  main {
+    max-width: 700px;
+    margin: auto;  
+  }
+}
 </style>

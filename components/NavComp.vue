@@ -51,4 +51,11 @@ a:hover {
   border-bottom: 1px solid var(--darkBlue);
   font-weight: bold;
 }
+
+/* +> 600px screens */
+@media screen and (min-width: 600px) {
+  header {
+    padding: 2rem 3rem;
+  }
+}
 </style>

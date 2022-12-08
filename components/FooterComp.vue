@@ -99,4 +99,34 @@ img {
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+
+/* +> 650px screens */
+@media screen and (min-width: 650px) {
+	footer {
+    padding: 2rem 3rem;
+  }
+	.img-container {
+		text-align: left;
+	}
+	.links-container {
+		display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+		align-items: start;
+	}
+	.links {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.links h3 {
+		width: 100%;
+	}
+	.links a {
+		margin-right: 1rem;
+	}
+	.footer-wrapper {
+		margin-top: 1rem;
+		flex-direction: column;
+	}
+}
 </style>

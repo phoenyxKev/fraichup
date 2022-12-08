@@ -32,4 +32,12 @@
     opacity: 0.6;
   }
 }
+
+/* +> 600px screens */
+@media screen and (min-width: 600px) {
+  .loading img {
+    width: 80%;
+    height: 80%; 
+  }
+}
 </style>

@@ -99,7 +99,7 @@ h1 {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 48px;
+  font-size: 32px;
   text-align: center;
   margin: 1rem 0;
   line-height: 1.25;
@@ -213,5 +213,52 @@ h2 {
 #map ul {
   margin: auto;
   width: fit-content;
+}
+
+/* +> 600px screens */
+@media screen and (min-width: 600px) {
+  #hero-container {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #process {
+    padding-top: 0rem;
+  }
+  #process h2 {
+    margin-top: 0rem;
+  }
+  #process ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+}
+
+/* +> 650px screens */
+@media screen and (min-width: 650px) {
+  #map {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    max-width: fit-content;
+    justify-items: start;
+    padding-top: 3rem;
+    margin: auto;
+  }
+}
+
+/* +> 900px screens */
+@media screen and (min-width: 900px) {
+  #process ul {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
 }
 </style>
