@@ -1,6 +1,5 @@
 <template>
-	<footer action="https://formspree.io/f/mqkjrlqj" method="POST">
-		<!-- action="https://formspree.io/f/mdobddan" method="POST" -->
+	<footer>
 		<div class="img-container">
 			<img src="~/assets/img/Fraichup.svg" alt="Fraichup" />	
 		</div>		
